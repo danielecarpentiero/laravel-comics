@@ -19,3 +19,10 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 });
+
+Route::get('/info', function () {
+    $data = [
+        'comics' => config('comicsdb')
+    ];
+    return view('info', $data);
+});
