@@ -1,0 +1,27 @@
+@use './variables.scss' as *;
+
+header{
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 120px;
+    ul {
+        text-transform: uppercase;
+        height: 100%;
+        li  {
+            a:link{
+                text-decoration: none;
+            }
+            a:visited{
+                color: inherit;
+            }
+            color: $darker--icon--bg-color;
+            font-weight: 700;
+            padding: 0 1.5rem;
+            line-height: 100px;
+            cursor: pointer;
+            &:hover {
+                color: $complementary--color;
+                border-bottom: 5px solid $complementary--color;     
+            }}
+    };
+}

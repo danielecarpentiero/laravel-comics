@@ -1,8 +1,7 @@
+@use './partials/main.scss' as *;
+@use './partials/jumbo.scss' as *;
+@use './partials/header.scss' as *;
+@use './partials/jumbo.scss' as *;
+
 @import "~bootstrap/scss/bootstrap";
 
-.square-image {
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-    object-position: top;
-}

@@ -11,6 +11,10 @@
 <body>
     @include ("shared/header")
     <div class="main">
+        <div class="jumbotron">
+            <div class="btn">current series</div>
+            <img src="{{Vite::asset('resources/img/jumbotron.jpg')}}" alt="">
+        </div>
         @yield('content')
     </div>
     @include ("shared/footer")
