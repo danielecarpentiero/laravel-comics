@@ -15,14 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = [
-        'comics' => config('comicsdb')
+        'comics' => config('comicsdb'),
+        'navItems' => config('navbar')
     ];
     return view('home', $data);
 });
 
-Route::get('/info', function () {
+Route::get('info', function () {
     $data = [
-        'comics' => config('comicsdb')
+        'comics' => config('comicsdb'),
+        'navItems' => config('navbar')
     ];
     return view('info', $data);
 });
