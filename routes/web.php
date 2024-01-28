@@ -17,7 +17,8 @@ Route::get('/', function () {
     $data = [
         'comics' => config('comicsdb'),
         'navItems' => config('navbar'),
-        'items' => config('footermenu')
+        'items' => config('footermenu'),
+        'socials' => config('socials')
     ];
     return view('home', $data);
 });
@@ -26,7 +27,8 @@ Route::get('info', function () {
     $data = [
         'comics' => config('comicsdb'),
         'navItems' => config('navbar'),
-        'items' => config('footermenu')
+        'items' => config('footermenu'),
+        'socials' => config('socials')
     ];
     return view('info', $data);
 });
