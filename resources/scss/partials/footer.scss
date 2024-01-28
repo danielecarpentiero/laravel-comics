@@ -1,0 +1,36 @@
+@use "./variables.scss" as *;
+
+footer {
+    background-image: url("../../img/footer-bg.jpg");
+    .upper-footer {
+        justify-content: center;
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .container {
+            width: 75%;
+            display: flex;
+            max-height: 450px;
+            justify-content: space-between;
+            nav {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                font-size: 20px;
+            }
+            h3 {
+                color: $primary--color;
+                text-transform: uppercase;
+            }
+            li {
+                list-style-type: none;
+            }
+            a {
+                text-decoration: none;
+                color: $icon--bg-color;
+            }
+        }
+    }
+}

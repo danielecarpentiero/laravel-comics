@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = [
         'comics' => config('comicsdb'),
-        'navItems' => config('navbar')
+        'navItems' => config('navbar'),
+        'items' => config('footermenu')
     ];
     return view('home', $data);
 });
@@ -24,7 +25,8 @@ Route::get('/', function () {
 Route::get('info', function () {
     $data = [
         'comics' => config('comicsdb'),
-        'navItems' => config('navbar')
+        'navItems' => config('navbar'),
+        'items' => config('footermenu')
     ];
     return view('info', $data);
 });
